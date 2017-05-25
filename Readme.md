@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алиса Красильникова](https://up.htmlacademy.ru/adaptive/11/user/364477).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Ганин](https://htmlacademy.ru/profile/id195773).
 
 ---
 
