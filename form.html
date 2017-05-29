@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__title">PINK: взгляните на жизнь иначе!</h1> <!--Скрыт!-->
+  	  <div class="page-header__logo">
+  	    <img src="#" alt="PINK" width="" height="">
+  	  </div>
+  	  <nav class="main-nav"> <!--main-nav--open для открытого состояния меню-->
+        <span class="main-nav__toggler main-nav__toggler--open"></span>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+  	  </nav>
+    <main>
+      <article class="contest">
+        <section class="contest__header">
+          <h2 class="contest__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </section>
+        <section class="contest__intro-name">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label>Фамилия:
+              <input type="text" name="surname" id="user-surname" placeholder="Укажите фамилию*" required>
+            </label><br>
+            <label>Имя:
+              <input type="text" name="name" id="user-name" placeholder="Введите ваше имя*" required>
+            </label><br>
+             <label>Имя:
+              <input type="text" name="middle-name" id="user-middle-name" placeholder="Ну и отчество тоже">
+            </label>
+          </form>
+        </section>
+        <section class="contest__achievements">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Ваши безбашенные достижения в путешествии</legend>
+              <label>
+                <input type="checkbox" name="selfie" id="selfie" checked>Сделал селфи с акулой
+              </label><br>
+              <label>
+                <input type="checkbox" name="beach" id="beach" checked>Обгорел на пляже
+              </label><br>
+              <label>
+                <input type="checkbox" name="norris" id="norris">Видел Чака Норриса
+              </label><br>
+              <label>
+                <input type="checkbox" name="souvenirs" id="souvenirs">Накупил сувениров
+              </label><br>
+              <label>
+                <input type="checkbox" name="tower" id="tower" checked>Удержал башню
+              </label><br>
+              <label>
+                <input type="checkbox" name="hotel" id="hotel">Разгромил отель
+              </label>
+            </fieldset>
+          </form>
+        </section>
+        <section class="contest__user-contacts">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              <input type="tel" name="tel" id="tel" pattern="8[0-9]{10}" placeholder="Номер, пожалуйста">
+            </label><br>
+            <label>
+              <input type="email" name="email" id="email" placeholder="Введите почту*" required>
+            </label>
+          </form>
+        </section>
+        <section class="contest__app">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>С каким приложением путешествовали?</legend>
+              <label>
+                <input type="radio" name="app" value="ios" checked>Pink для iOS
+              </label><br>
+              <label>
+                <input type="radio" name="app" value="android">Pink на Android
+              </label><br>
+              <label>
+                <input type="radio" name="app" value="windows">Windows Phone
+              </label><br>
+            </fieldset>
+          </form>
+        </section>
+        <section class="contest__emotions-submit">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Опишите свои эмоции</legend>
+              <textarea  name="emotions" id="user-emotions" rows="6" cols="24">Можно прям в красках, не стесняясь в выражениях</textarea><br>
+              <button type="submit">Отправить форму</button>
+            </fieldset>
+          </form>
+          <aside><sup>*</sup>—обязательные поля</aside>
+        </section>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="#" alt="" width="" height="">
+      </div>
+      <section class="socials">
+        <a class="socials__item socials__item--twitter" href="#"><img src="" alt="Мы в Твиттере" width="" height=""></a>
+        <a class="socials__item socials__item--fb" href="#"><img src="" alt="Мы в Фэйсбуке" width="" height=""></a>
+        <a class="socials__item socials__item--youtube" href="#"><img src="" alt="Мы на Ютубе" width="" height=""></a>
+      </section>
+      <p class="page-footer__copyright">Разработано <a href="#"><img src="" alt="HTML Academy" width="" height=""></a></p>
+    </footer>
+  </body>
+</html>
