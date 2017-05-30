@@ -5,8 +5,129 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="page-header__title">PINK: взгляните на жизнь иначе!</h1> <!--Скрыт!-->
+  	  <div class="page-header__logo">
+  	    <img src="http://placehold.it/75x22" alt="PINK" width="75" height="22">
+  	  </div>
+  	  <nav class="menu"> 
+        <button type="button" class="menu__toggler menu__toggler--open">
+          <span class="burger"></span>
+        </button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/index.html">Главная</a></li>
+            <li class="menu__item"><a href="/photo.html">Фотографии</a></li>
+            <li class="menu__item"><a href="/form.html">Конкурс</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </div>
+  	  </nav>
+      <article class="pink-promo">
+        <div class="pink-promo__image">
+          <img src="http://placehold.it/320x314" alt="Розовый фильтр" width="" height="">
+        </div>
+        <section class="pink-download">
+          <a class="pink-download__btn btn" href="#">Скачать приложение</a>
+          <figure class="pink-download__platforms">
+            <a class="pink-download__itunes" href="#"><img src="http://placehold.it/47x56" alt="Apple" width="" height=""></a>
+            <a class="pink-download__googleplay" href="#"><img src="http://placehold.it/42x47" alt="Android" width="" height=""></a>
+            <a class="pink-download__windows" href="#"><img src="http://placehold.it/40x44" alt="Windows" width="" height=""></a>
+            <figcaption>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</figcaption>
+          </figure>
+        </section>
+      </article>
+    </header>
+    <main>
+      <section class="features">
+        <div class="features__header">
+          <h2 class="features__title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+        </div>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p class="features__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p class="features__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="features__picture">
+          <img src="http://placehold.it/157x320" alt="Всем привет!" width="" height="">
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="reviews__title">Отзывы</h2> <!--Скрыт!-->
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author">Николай Петров</cite>
+            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </blockquote>
+          <div class="reviews__pagination slider__pagination">
+            <span class="slider__pagination-item slider__pagination-item--active"></span>
+            <span class="slider__pagination-item"></span>
+            <span class="slider__pagination-item"></span>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <h2 class="price__title">Тарифы</h2> <!--Скрыт!-->
+          <table class="price__list">
+            <tr class="price__tariffs">
+              <th class="price__options"></th>
+              <th class="price__basic">База<br>
+                <span class="price__item">1,99 USD</span>
+              </th>
+              <th class="price__standart"><sup class="price__hit">хит</sup>Стандарт<br>
+                <span class="price__item">3,99 USD</span>
+              </th>
+              <th class="price__unlim">Анлим<br>
+                <span class="price__item">9,99 USD</span>
+              </th>
+            </tr>
+            <tr class="price__pink-filter">
+              <td class="price__options">Розовый фильтр</td>
+              <td class="price__basic"><span class="price__pink-filter--yes"></span></td>
+              <td class="price__standart"><span class="price__pink-filter--yes"></span></td>
+              <td class="price__unlim"><span class="price__pink-filter--yes"></span></td>
+            </tr>
+            <tr class="price__smiles">
+              <td class="price__options">Смайлики</td>
+              <td class="price__basic"><span class="price__smiles--no"></span></td>
+              <td class="price__standart"><span class="price__smiles--yes"></span></td>
+              <td class="price__unlim"><span class="price__smiles--yes"></span></td>
+            </tr>
+            <tr class="price__comments">
+              <td class="price__options">Комментарии</td>
+              <td class="price__basic"><span class="price__comments--no"></span></td>
+              <td class="price__standart"><span class="price__comments--no"></span></td>
+              <td class="price__unlim"><span class="price__comments--yes"></span></td>
+            </tr>
+          </table>
+          <div class="price__pagination slider__pagination">
+            <span class="slider__pagination-item slider__pagination-item--active"></span>
+            <span class="slider__pagination-item"></span>
+            <span class="slider__pagination-item"></span>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <ul class="contacts__items">
+          <li class="contacts__phone">Звоните: <span class="contacts__info">+7 (812) 555-66-66</span></li>
+          <li class="contacts__mail">Пишите: <span class="contacts__info">mail@htmlacademy.ru</span></li>
+          <li class="contacts__address">Приезжайте в гости: <span class="contacts__info">ул. Большая Конюшенная, 19/8</span></li>
+        </ul>
+        <div class="contacts__map">
+        <!--тут будет карта-->
+      </div>
+      </section>
+    </main>
   </body>
 </html>
