@@ -10,27 +10,29 @@
   	  <div class="page-header__logo">
   	    <img src="http://placehold.it/75x22" alt="PINK" width="75" height="22">
   	  </div>
-  	  <nav class="main-nav main-nav--open"> <!--main-nav--open для открытого состояния меню-->
-        <span class="main-nav__toggler main-nav__toggler--open"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+  	  <nav class="menu"> 
+        <button type="button" class="menu__toggler menu__toggler--open">
+          <span class="burger"></span>
+        </button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/index.html">Главная</a></li>
+            <li class="menu__item"><a href="/photo.html">Фотографии</a></li>
+            <li class="menu__item"><a href="/form.html">Конкурс</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </div>
   	  </nav>
       <article class="pink-promo">
         <div class="pink-promo__image">
-          <img src="http://placehold.it/320x314" alt="" width="" height="">
+          <img src="http://placehold.it/320x314" alt="Розовый фильтр" width="" height="">
         </div>
         <section class="pink-download">
-          <a class="pink-download__btn" href="#">Скачать приложение</a>
+          <a class="pink-download__btn btn" href="#">Скачать приложение</a>
           <figure class="pink-download__platforms">
-            <a class="pink-download__itunes" href="#"><img src="" alt="Apple" width="" height=""></a>
-            <a class="pink-download__googleplay" href="#"><img src="" alt="Android" width="" height=""></a>
-            <a class="pink-download__windows" href="#"><img src="" alt="Windows" width="" height=""></a>
+            <a class="pink-download__itunes" href="#"><img src="http://placehold.it/47x56" alt="Apple" width="" height=""></a>
+            <a class="pink-download__googleplay" href="#"><img src="http://placehold.it/42x47" alt="Android" width="" height=""></a>
+            <a class="pink-download__windows" href="#"><img src="http://placehold.it/40x44" alt="Windows" width="" height=""></a>
             <figcaption>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</figcaption>
           </figure>
         </section>
@@ -56,7 +58,7 @@
           </li>
         </ul>
         <div class="features__picture">
-          <img src="" alt="Всем привет!" width="" height="">
+          <img src="http://placehold.it/157x320" alt="Всем привет!" width="" height="">
         </div>
       </section>
       <section class="reviews">
@@ -122,12 +124,10 @@
           <li class="contacts__mail">Пишите: <span class="contacts__info">mail@htmlacademy.ru</span></li>
           <li class="contacts__address">Приезжайте в гости: <span class="contacts__info">ул. Большая Конюшенная, 19/8</span></li>
         </ul>
-      </section>
-      <div class="map"> <!--не успела выяснить, как сделать карту-->
-        <a class="map__link" href="#">
-          <img class="map__pic" src="#">
-        </a>
+        <div class="contacts__map">
+        <!--тут будет карта-->
       </div>
+      </section>
     </main>
   </body>
 </html>
