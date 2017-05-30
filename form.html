@@ -8,16 +8,18 @@
     <header class="page-header">
       <h1 class="page-header__title">PINK: взгляните на жизнь иначе!</h1> <!--Скрыт!-->
   	  <div class="page-header__logo">
-  	    <img src="#" alt="PINK" width="" height="">
+  	    <img src="http://placehold.it/75x22" alt="PINK" width="" height="">
   	  </div>
-  	  <nav class="main-nav"> <!--main-nav--open для открытого состояния меню-->
-        <span class="main-nav__toggler main-nav__toggler--open"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+  	  <nav class="menu"> <!--menu--open для открытого состояния меню-->
+        <button type="button" class="menu__toggler menu__toggler--open">
+          <span class="burger"></span>
+        </button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/index.html">Главная</a></li>
+            <li class="menu__item"><a href="/photo.html">Фотографии</a></li>
+            <li class="menu__item"><a href="/form.html">Конкурс</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </div>
   	  </nav>
@@ -29,15 +31,14 @@
         <section class="contest__intro-name">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label>Фамилия:
-              <input type="text" name="surname" id="user-surname" placeholder="Укажите фамилию*" required>
-            </label><br>
-            <label>Имя:
-              <input type="text" name="name" id="user-name" placeholder="Введите ваше имя*" required>
-            </label><br>
-             <label>Имя:
-              <input type="text" name="middle-name" id="user-middle-name" placeholder="Ну и отчество тоже">
-            </label>
+            <label for="surname-id">Фамилия:</label>
+            <input type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required>
+            <br>
+            <label for="name-id">Имя:</label>
+            <input type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required>
+            <br>
+             <label for="middle-name-id">Отчество:</label>
+            <input type="text" name="middle-name" id="middle-name-id" placeholder="Ну и отчество тоже">
           </form>
         </section>
         <section class="contest__achievements">
@@ -45,34 +46,32 @@
             <fieldset>
               <legend>Ваши безбашенные достижения в путешествии</legend>
               <label>
-                <input type="checkbox" name="selfie" id="selfie" checked>Сделал селфи с акулой
+                <input type="checkbox" name="selfie" id="selfie-id" checked>Сделал селфи с акулой
               </label><br>
               <label>
-                <input type="checkbox" name="beach" id="beach" checked>Обгорел на пляже
+                <input type="checkbox" name="beach" id="beach-id" checked>Обгорел на пляже
               </label><br>
               <label>
-                <input type="checkbox" name="norris" id="norris">Видел Чака Норриса
+                <input type="checkbox" name="norris" id="norris-id">Видел Чака Норриса
               </label><br>
               <label>
-                <input type="checkbox" name="souvenirs" id="souvenirs">Накупил сувениров
+                <input type="checkbox" name="souvenirs" id="souvenirs-id">Накупил сувениров
               </label><br>
               <label>
-                <input type="checkbox" name="tower" id="tower" checked>Удержал башню
+                <input type="checkbox" name="tower" id="tower-id" checked>Удержал башню
               </label><br>
               <label>
-                <input type="checkbox" name="hotel" id="hotel">Разгромил отель
+                <input type="checkbox" name="hotel" id="hotel-id">Разгромил отель
               </label>
             </fieldset>
           </form>
         </section>
         <section class="contest__user-contacts">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              <input type="tel" name="tel" id="tel" pattern="8[0-9]{10}" placeholder="Номер, пожалуйста">
-            </label><br>
-            <label>
-              <input type="email" name="email" id="email" placeholder="Введите почту*" required>
-            </label>
+            <label for="tel-id">Номер телефона</label><br>
+            <input type="tel" name="tel" id="tel-id" pattern="8[0-9]{10}" placeholder="Номер, пожалуйста">
+            <label for="email-id">Адрес почты</label><br>
+            <input type="email" name="email" id="email-id" placeholder="Введите почту*" required>
           </form>
         </section>
         <section class="contest__app">
@@ -87,7 +86,7 @@
               </label><br>
               <label>
                 <input type="radio" name="app" value="windows">Windows Phone
-              </label><br>
+              </label>
             </fieldset>
           </form>
         </section>
@@ -95,24 +94,34 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>Опишите свои эмоции</legend>
-              <textarea  name="emotions" id="user-emotions" rows="6" cols="24">Можно прям в красках, не стесняясь в выражениях</textarea><br>
+              <textarea  name="emotions" id="user-emotions-id" rows="6" cols="24">Можно прям в красках, не стесняясь в выражениях</textarea><br>
               <button type="submit">Отправить форму</button>
             </fieldset>
           </form>
-          <aside><sup>*</sup>—обязательные поля</aside>
+          <span><sup>*</sup>—обязательные поля</span>
         </section>
+        <div class="contest__required-failure">
+          <h3 class=contest__failure>Что-то пошло не так!</h3>
+          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="contest__required btn">OK</button>
+        </div>
+        <div class="contest__submit-success">
+          <h3 class="contest__success">Ваша заявка отправлена</h3>
+          <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <button type="button" class="contest__success-close btn">Закрыть окно</button>
+        </div>   
       </article>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img src="#" alt="" width="" height="">
+        <img src="http://placehold.it/147x40" alt="Pink" width="" height="">
       </div>
       <section class="socials">
-        <a class="socials__item socials__item--twitter" href="#"><img src="" alt="Мы в Твиттере" width="" height=""></a>
-        <a class="socials__item socials__item--fb" href="#"><img src="" alt="Мы в Фэйсбуке" width="" height=""></a>
-        <a class="socials__item socials__item--youtube" href="#"><img src="" alt="Мы на Ютубе" width="" height=""></a>
+        <a class="socials__item socials__item--twitter" href="#"><img src="http://placehold.it/51x51" alt="Мы в Твиттере" width="" height=""></a>
+        <a class="socials__item socials__item--fb" href="#"><img src="http://placehold.it/51x51" alt="Мы в Фэйсбуке" width="" height=""></a>
+        <a class="socials__item socials__item--youtube" href="#"><img src="http://placehold.it/51x51" alt="Мы на Ютубе" width="" height=""></a>
       </section>
-      <p class="page-footer__copyright">Разработано <a href="#"><img src="" alt="HTML Academy" width="" height=""></a></p>
+      <p class="page-footer__copyright">Разработано <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" alt="HTML Academy" width="" height=""></a></p>
     </footer>
   </body>
 </html>
