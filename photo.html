@@ -9,14 +9,16 @@
       <div class="page-header__logo">
   	    <img src="#" alt="PINK" width="" height="">
   	  </div>
-  	  <nav class="main-nav"> <!--main-nav--open для открытого состояния меню-->
-        <span class="main-nav__toggler main-nav__toggler--open"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+  	  <nav class="menu"> <!--menu--open для открытого состояния меню-->
+        <button type="button" class="menu__toggler menu__toggler--open">
+          <span class="burger"></span>
+        </button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/index.html">Главная</a></li>
+            <li class="menu__item"><a href="/photo.html">Фотографии</a></li>
+            <li class="menu__item"><a href="/form.html">Конкурс</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </div>
   	  </nav>
@@ -27,116 +29,101 @@
       <section class="user-photos">
         <p class="user-photos__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <figure class="user-photos__item">
-          <img src="http://placehold.it/280x180" alt="Фото!" width="" height=""> <!--Где-то тут еще "Панорама дня"-->
+          <img src="http://placehold.it/320x136" alt="Фото!" width="" height="">
+          <sup class"user-photos__panorama">Панорама дня</sup>
           <figcaption><cite>Анна </cite><i>(5 минут назад)</i>
             <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 215</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="user-photos__item">
           <img src="http://placehold.it/280x180" alt="Фото!" width="" height="">
-          <figcaption><cite>Левон </cite><i>(5 минут назад)</i>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+          <figcaption><cite>Левон </cite><i>(5 часов назад)</i>
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 356</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="user-photos__item">
           <img src="http://placehold.it/280x180" alt="Фото!" width="" height="">
-          <figcaption><cite>Антон </cite><i>(5 минут назад)</i>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+          <figcaption><cite>Антон </cite><i>(12 часов назад)</i>
+            <p>Соседи будут рады!</p>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 666</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="user-photos__item">
           <img src="http://placehold.it/280x180" alt="Фото!" width="" height="">
-          <figcaption><cite>Борис </cite><i>(5 минут назад)</i>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+          <figcaption><cite>Борис </cite><i>(20 часов назад)</i>
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 215</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="user-photos__item">
           <img src="http://placehold.it/280x180" alt="Фото!" width="" height="">
-          <figcaption><cite>Сергей </cite><i>(5 минут назад)</i>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+          <figcaption><cite>Сергей </cite><i>(25 часов назад)</i>
+            <p>Самая кубанская в мире!</p>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 4</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="user-photos__item">
           <img src="http://placehold.it/280x180" alt="Фото!" width="" height="">
-          <figcaption><cite>Максим </cite><i>(5 минут назад)</i>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+          <figcaption><cite>Максим </cite><i>(40 часов назад)</i>
+            <p>Где снег-то?</p>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 150</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="user-photos__item">
           <img src="http://placehold.it/280x180" alt="Фото!" width="" height="">
-          <figcaption><cite>Надежда </cite><i>(5 минут назад)</i>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__item-like>
-              <div class="user-photos__like>
-                <img src="#" alt="Like!" width="" height="">
-              </div>
-              Нравится: 215
-            </span>
+          <figcaption><cite>Надежда </cite><i>(45 часов назад)</i>
+            <p>Всем GM и взаимные лайки!</p>
+            <div class="user-photos__like">
+              <img src="http://placehold.it/12x15" alt="Like!" width="" height="">
+              <span class="user-photos_like-counter">Нравится: 2560</span>
+            </div>
           </figcaption>
         </figure>
         <p class="user-photos__outro">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="user-photos__post">
-        <label>
-          <div class="user-photos__try-it">
-            <img src="http://placehold.it/280x370" alt="Try it!" width="" height="">
-          </div>
-          <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label>
+            <div class="user-photos__try-it">
+              <img src="http://placehold.it/280x370" alt="Try it!" width="" height="">
+            </div>         
             <input type="range" name="filter" id="filter-range" min="0" max="10">
-          </form>
-        </label>
-        <div class="user-photos__post-btns">
+          </label>        
           <button class="user-photos__send btn btn--active">Запостить</button><br>
           <button class="user-photos__reset btn" type="reset">Отмена</button>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img src="#" alt="" width="" height="">
+        <img src="http://placehold.it/147x40" alt="Pink" width="" height="">
       </div>
       <section class="socials">
-        <a class="socials__item socials__item--twitter" href="#"><img src="" alt="Мы в Твиттере" width="" height=""></a>
-        <a class="socials__item socials__item--fb" href="#"><img src="" alt="Мы в Фэйсбуке" width="" height=""></a>
-        <a class="socials__item socials__item--youtube" href="#"><img src="" alt="Мы на Ютубе" width="" height=""></a>
+        <a class="socials__item socials__item--twitter" href="#"><img src="http://placehold.it/51x51" alt="Мы в Твиттере" width="" height=""></a>
+        <a class="socials__item socials__item--fb" href="#"><img src="http://placehold.it/51x51" alt="Мы в Фэйсбуке" width="" height=""></a>
+        <a class="socials__item socials__item--youtube" href="#"><img src="http://placehold.it/51x51" alt="Мы на Ютубе" width="" height=""></a>
       </section>
-      <p class="page-footer__copyright">Разработано<a href="#"><img src="" alt="HTML Academy" width="" height=""></a></p>
+      <p class="page-footer__copyright">Разработано <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" alt="HTML Academy" width="" height=""></a></p>
     </footer>
   </body>
 </html>
