@@ -1,15 +1,25 @@
-.features {
-  .paint-grey();
-}
 .features__header {
-  background-color: @white;
+  .paint(@white);
 }
 .features__title {
-  .font-set(24px; @opensanslight; normal; @navy);
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 20px;
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+.features__list {
+  list-style-type: none;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 45px;  
 }
 .features__item-title {
-  .font-set(18px; @opensansbold; 10px; @navy);  
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: @black;
 }
-.features__item-descr {
-  .font-set(14px); @opensans; 24px; @navy);
-}
+.features__picture {
+  padding: 0 80px;
+  }

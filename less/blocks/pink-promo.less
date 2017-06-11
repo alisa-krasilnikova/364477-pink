@@ -1,13 +1,26 @@
 .pink-promo {
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-color: @dark-navy;  
 }
-@dark-navy: #1d2631;
+.pink-promo__image {
+ background-color: @dark-navy;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
 .pink-download {
-  background-color: @dark-navy;
+  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   }
 .pink-download__btn {
-  .font-set(18px; @opensansbold; 18px; @white);
+  font-size: 18px;
+  font-weight: bold;
+  color: @white;
+  text-decoration: none;
 }
 .pink-download__platforms {
-  .font-set(14px; @opensanslight; 24px; @white);
- }
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 24px;
+  color: @white;
+  }

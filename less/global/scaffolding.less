@@ -1,0 +1,48 @@
+@white: #ffffff;
+@black: #000000;
+@grey: #f2f2f2;
+@green: #2aab6d;
+@navy: #283645;
+@dark-navy: #1d2631;
+@pink: #d22856;
+
+@font-face { 
+  font-family: "Opensans"; 
+  src: url("/fonts/opensans.woff") format("woff");
+  src: url("/fonts/opensans.woff2") format("woff2");
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: "Opensans"; 
+  src: url("/fonts/opensansbold.woff") format("woff");
+  src: url("/fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: "Opensans"; 
+  src: url("/fonts/opensanslight.woff") format("woff");
+  src: url("/fonts/opensanslight.woff2") format("woff2");
+  font-weight: lighter; 
+  font-style: normal; 
+}
+.paint(@color) {
+  background-color: @color;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: @grey;
+  color: @navy;  
+  min-width: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: OpenSans, sans-serif;
+  font-style: normal;
+  }
+img {
+  max-width: 100%;
+  height: auto;
+}

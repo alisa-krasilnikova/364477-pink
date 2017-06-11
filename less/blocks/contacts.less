@@ -1,15 +1,25 @@
 .contacts {
-  background-image: url("/img/bg-map-mobile@1x.png");
+  .paint(@white);
   }
 .contacts__wrapper {
-  background-color: @white;
+  padding: 20px 40px;
 }
-.contacts-title {
-  .font-set(24px; @opensanslight; normal; @navy);
+.contacts__title {
+  font-size: 24px;
+  font-weight: lighter;  
 }
 .contacts__items {
-  .font-set(18px; @opensansbold; normal; @navy);  
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: none;
 }
 .contacts__info {
-  .font-set(24px; @opensanslight; normal; @pink);
-}
+  font-size: 24px;
+  font-weight: lighter;
+  color: @pink;
+  }
+.contacts__map {  
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  }
