@@ -8,26 +8,26 @@
 @tablet-widths: ~"(min-width: 660px)";
 @desktop-widths: ~"(min-width: 1200px)";
 
-@font-face { 
-  font-family: "Opensans"; 
+@font-face {
+  font-family: "Opensans";
   src: url("/fonts/opensans.woff") format("woff");
   src: url("/fonts/opensans.woff2") format("woff2");
-  font-weight: normal; 
-  font-style: normal; 
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face { 
-  font-family: "Opensans"; 
+@font-face {
+  font-family: "Opensans";
   src: url("/fonts/opensansbold.woff") format("woff");
   src: url("/fonts/opensansbold.woff2") format("woff2");
-  font-weight: bold; 
-  font-style: normal; 
+  font-weight: bold;
+  font-style: normal;
 }
-@font-face { 
-  font-family: "Opensans"; 
+@font-face {
+  font-family: "Opensans";
   src: url("/fonts/opensanslight.woff") format("woff");
   src: url("/fonts/opensanslight.woff2") format("woff2");
-  font-weight: lighter; 
-  font-style: normal; 
+  font-weight: lighter;
+  font-style: normal;
 }
 .paint(@color) {
   background-color: @color;
@@ -35,7 +35,7 @@
 .container() {
   width: 320px;
   margin: 0 auto;
-  
+
   @media @tablet-widths {
     width: 620px;
     padding: 0 20px;
@@ -50,7 +50,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: @grey;
-  color: @navy;  
+  color: @navy;
   min-width: 320px;
   font-size: 14px;
   line-height: 24px;
