@@ -1,15 +1,22 @@
 .page-header {
-  .paint(@navy);  
+  .paint(@navy);
+  min-height: 320px; /*временно для сетки*/  
 }
 .page-header__logo-burger {
   padding: 20px;
   padding-bottom: 25px;
+  min-height: 70px;
   display: flex;
-  flex-direction: row;
-  flex-basis: 70px;
+  justify-content: space-between;
   }
+.page-header__logo {
+  display: flex-inline;
+}
 .menu__toggler {
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;  
+  display: flex-inline;
 }
 .menu__list {
   display: flex;
@@ -27,3 +34,22 @@
   text-transform: uppercase;
   text-decoration: none;
   }
+@media @tablet-widths {
+  .page-header__logo-burger {
+    height: 110px;
+  }  
+}
+@media @desktop-widths {
+  .page-header {
+    height: 110px;
+  }
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px;
+  }
+  .menu__list {
+    flex-direction: row;
+  }
+  
+}

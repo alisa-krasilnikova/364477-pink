@@ -5,6 +5,8 @@
 @navy: #283645;
 @dark-navy: #1d2631;
 @pink: #d22856;
+@tablet-widths: ~"(min-width: 660px)";
+@desktop-widths: ~"(min-width: 1200px)";
 
 @font-face { 
   font-family: "Opensans"; 
@@ -29,6 +31,19 @@
 }
 .paint(@color) {
   background-color: @color;
+}
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  
+  @media @tablet-widths {
+    width: 620px;
+    padding: 0 20px;
+  }
+  @media @desktop-widths {
+    width: 960px;
+    padding: 0 120px;
+  }
 }
 
 body {

@@ -10,38 +10,41 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">PINK: взгляните на жизнь иначе!</h1> <!--Скрыт!-->
-      <div class="page-header__logo">
-        <img src="http://placehold.it/75x22" alt="PINK" width="" height="">
-  	  </div>
-  	  <nav class="menu"> <!--menu--open для открытого состояния меню-->
-        <button type="button" class="menu__toggler menu__toggler--open">
-          <span class="burger"></span>
-        </button>
-        <div class="menu__wrapper">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="/index.html">Главная</a></li>
-            <li class="menu__item"><a href="/photo.html">Фотографии</a></li>
-            <li class="menu__item"><a href="/form.html">Конкурс</a></li>
-            <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
+      <div class="page-header__container">
+        <div class="page-header__logo-burger">
+          <div class="page-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
+          </div>
+          <button type="button" class="menu__toggler menu__toggler--open">
+            Close
+          </button>
         </div>
-  	  </nav>
+        <nav class="menu">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__name" href="/index.html">Главная</a></li>
+              <li class="menu__item"><a class="menu__name" href="/photo.html">Фотографии</a></li>
+              <li class="menu__item"><a class="menu__name" href="/form.html">Конкурс</a></li>
+              <li class="menu__item"><a class="menu__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     <main>
       <article class="contest">
         <section class="contest__header">
           <h2 class="contest__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </section>
         <section class="contest__intro-name">
-          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="surname-id">Фамилия:</label>
+            <label class="contest__user" for="surname-id">Фамилия:</label>
             <input type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required>
             <br>
-            <label for="name-id">Имя:</label>
+            <label class="contest__user" for="name-id">Имя:</label>
             <input type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required>
             <br>
-             <label for="middle-name-id">Отчество:</label>
+             <label class="contest__user" for="middle-name-id">Отчество:</label>
             <input type="text" name="middle-name" id="middle-name-id" placeholder="Ну и отчество тоже">
           </form>
         </section>
@@ -49,22 +52,22 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>Ваши безбашенные достижения в путешествии</legend>
-              <label>
+              <label class="contest__questions">
                 <input type="checkbox" name="selfie" id="selfie-id" checked>Сделал селфи с акулой
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="checkbox" name="beach" id="beach-id" checked>Обгорел на пляже
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="checkbox" name="norris" id="norris-id">Видел Чака Норриса
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="checkbox" name="souvenirs" id="souvenirs-id">Накупил сувениров
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="checkbox" name="tower" id="tower-id" checked>Удержал башню
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="checkbox" name="hotel" id="hotel-id">Разгромил отель
               </label>
             </fieldset>
@@ -72,9 +75,9 @@
         </section>
         <section class="contest__user-contacts">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="tel-id">Номер телефона</label><br>
-            <input type="tel" name="tel" id="tel-id" pattern="8[0-9]{10}" placeholder="Номер, пожалуйста">
-            <label for="email-id">Адрес почты</label><br>
+            <label class="contest__user" for="tel-id">Номер телефона</label><br>
+            <input type="tel" name="tel" id="tel-id" pattern="8[0-9]{10}" placeholder="Номер, пожалуйста"><br>
+            <label class="contest__user" for="email-id">Адрес почты</label><br>
             <input type="email" name="email" id="email-id" placeholder="Введите почту*" required>
           </form>
         </section>
@@ -82,13 +85,13 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>С каким приложением путешествовали?</legend>
-              <label>
+              <label class="contest__questions">
                 <input type="radio" name="app" value="ios" checked>Pink для iOS
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="radio" name="app" value="android">Pink на Android
               </label><br>
-              <label>
+              <label class="contest__questions">
                 <input type="radio" name="app" value="windows">Windows Phone
               </label>
             </fieldset>
@@ -99,10 +102,10 @@
             <fieldset>
               <legend>Опишите свои эмоции</legend>
               <textarea  name="emotions" id="user-emotions-id" rows="6" cols="24">Можно прям в красках, не стесняясь в выражениях</textarea><br>
-              <button type="submit" class="btn btn--green">Отправить форму</button>
+              <button type="submit" class="contest__btn btn--green btn">Отправить форму</button>
             </fieldset>"
           </form>
-          <span><sup>*</sup>—обязательные поля</span>
+          <span class="contest__require-legend"><sup class="contest__mark-require">*</sup>— обязательные поля</span>
         </section>
         <div class="contest__required-failure">
           <h3 class=contest__failure>Что-то пошло не так!</h3>
