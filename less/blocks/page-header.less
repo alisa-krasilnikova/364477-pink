@@ -1,0 +1,55 @@
+.page-header {
+  .paint(@navy);
+  min-height: 320px; /*временно для сетки*/
+}
+.page-header__logo-burger {
+  padding: 20px;
+  padding-bottom: 25px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  }
+.page-header__logo {
+  display: flex-inline;
+}
+.menu__toggler {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex-inline;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+}
+.menu__item {
+  flex-basis: 65px;
+  margin: auto;
+  }
+  .menu__name {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+@media @tablet-widths {
+  .page-header__logo-burger {
+    height: 110px;
+  }
+}
+@media @desktop-widths {
+  .page-header {
+    height: 110px;
+  }
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px;
+  }
+  .menu__list {
+    flex-direction: row;
+  }
+
+}

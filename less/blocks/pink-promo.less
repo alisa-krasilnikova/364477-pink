@@ -1,0 +1,45 @@
+.pink-promo {
+  background-color: @dark-navy;
+  display: flex;
+  flex-direction: column;
+}
+.pink-promo__image {
+  background-color: @dark-navy;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 400px;
+}
+.pink-promo__mockup {
+}
+.pink-download {
+  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  flex-basis: 270px;
+  text-align: center;
+  }
+.pink-download__btn {
+  font-size: 18px;
+  font-weight: bold;
+  color: @white;
+  text-decoration: none;
+}
+.pink-download__platforms {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 24px;
+  color: @white;
+  }
+@media @tablet-widths {
+  .pink-promo {
+    height: 615px;
+    flex-direction: row-reverse;
+  }
+  .pink-promo__image {
+    height: 615px;
+  }
+  .pink-download {
+    padding-top: -350px;
+  }
+}
